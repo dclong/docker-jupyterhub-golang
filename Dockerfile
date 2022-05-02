@@ -8,4 +8,6 @@ RUN xinstall golang -ic \
     && cd /usr/local/share/jupyter/kernels/gophernotes \
     && cp "$(go env GOPATH)"/pkg/mod/github.com/gopherdata/gophernotes@v*/kernel/*  ./ \
     && chmod +w ./kernel.json \
-    && sed "s|gophernotes|$(go env GOPATH)/bin/gophernotes|" < kernel.json.in > kernel.json
+    && sed "s|gophernotes|$(go env GOPATH)/bin/gophernotes|" < kernel.json.in > kernel.json \
+    && chmod -R 777 /root
+
