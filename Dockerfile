@@ -1,6 +1,6 @@
 # NAME: dclong/jupyterhub-golang
 FROM dclong/jupyterhub
-# GIT: https://github.com/dclong/docker-jupyterhub.git
+# GIT: https://github.com/legendu-net/docker-jupyterhub.git
 
 RUN xinstall golang -ic \
     && env GO111MODULE=on go install github.com/gopherdata/gophernotes@latest \
