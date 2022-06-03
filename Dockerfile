@@ -1,4 +1,4 @@
-# NAME: dclong/jupyterhub-golang
+# NAME: dclong/jupyterhub-go
 FROM dclong/jupyterhub
 # GIT: https://github.com/legendu-net/docker-jupyterhub.git
 
